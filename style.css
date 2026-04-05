@@ -3,6 +3,24 @@ html, body {
     overflow-x: hidden;
 }
 
+.desktop-warning {
+    display: none;
+    background-color: #ffcc00;
+    color: #000;
+    text-align: center;
+    padding: 12px;
+    font-weight: bold;
+    width: 100%;
+    position: relative;
+    z-index: 10000;
+}
+
+@media only screen and (max-width: 768px) {
+    .desktop-warning {
+        display: block;
+    }
+}
+
 :root {
     --dark-green: #0a2910;
     --black: #050505;
