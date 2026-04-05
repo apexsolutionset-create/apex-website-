@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Digital Solution</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://checkout.chapa.co/checkout.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body class="dark-mode">
+
+    <div class="theme-bg dark-bg"></div>
+    <div class="theme-bg light-bg"></div>
+
+    <div class="bg-line top-left"></div>
+    <div class="bg-line bottom-right"></div>
+
+    <div id="about-modal" class="modal-overlay hidden">
+        <div class="modal-content glass no-blur">
+            <button id="close-about" class="close-btn">&times;</button>
+            <h2 class="bilingual" data-en="About Us" data-am="ስለ እኛ">About Us</h2>
+            <div class="about-text-content">
+                <p class="bilingual" data-en="At APEX Digital Solution, we believe a digital presence isn't just about existing—it's about building an invincible empire. As an entrepreneur-led digital agency, our mission is to empower brands to dominate their markets. By blending cutting-edge web design (Modern UI/UX), strategic social media growth, and AI-driven efficiency, we transition your business into a market leader. We don't just deliver services; we engineer results. Your success is our ultimate benchmark." data-am="እኛ በ APEX Digital Solution የምናምነው ዲጂታል መገኘት ዝም ብሎ ስም መያዝ ብቻ ሳይሆን፣ የማይበገር ንግድ መገንባት እንደሆነ ነው። እንደ አንድ የዲጂታል አገልግሎት ኤጀንሲ፣ ዓላማችን ብራንዶች በገበያው ውስጥ የበላይነታቸውን እንዲያረጋግጡ ማስቻል ነው። ዘመናዊ የዌብ ዲዛይን (Modern UI/UX)፣ ስልታዊ የሶሻል ሚዲያ አስተዳደር እና ሰው ሰራሽ አስተውሎትን (AI) በማቀናጀት የንግድዎን ሽያጭ እና ተደራሽነት ወደ አዲስ ከፍታ እናሸጋግራለን። እኛ የምንሸጠው አገልግሎት ሳይሆን ውጤት ነው፤ ምክንያቱም የእርስዎ ስኬት የእኛም መለያ ነው።"></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="faq-modal" class="modal-overlay hidden">
+        <div class="modal-content glass no-blur">
+            <button id="close-faq" class="close-btn">&times;</button>
+            <h2 class="bilingual" data-en="The 6 FAQs" data-am="6ቱ ተደጋጋሚ ጥያቄዎች">The 6 FAQs</h2>
+            <div class="faq-content">
+                <div class="faq-item">
+                    <h3 class="bilingual" data-en="How long to see results?" data-am="ውጤት ለማየት ምን ያህል ጊዜ ይፈጅብኛል?">How long to see results?</h3>
+                    <p class="bilingual" data-en="Sustainable growth takes time; expect significant shifts within 90 to 120 days." data-am="እውነተኛ የብራንድ እድገት ጊዜ ይፈልጋል፤ ተጨባጭ ለውጥ ለማየት ከ 90 እስከ 120 ቀናት ይፈጃል።"></p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="bilingual" data-en="Why choose APEX?" data-am="ለምን እናንተን እንመርጣለን?">Why choose APEX?</h3>
+                    <p class="bilingual" data-en="We use modern aesthetics and AI-driven automation to create customized strategies for your specific goals." data-am="የቆዩ መንገዶችን አንጠቀምም፤ በዘመናዊ ዲዛይን (Glassmorphism) እና በ AI የታገዘ ልዩ ስትራቴጂ እንነድፋለን።"></p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="bilingual" data-en="What makes Zenith special?" data-am="የ 'Zenith' ጥቅል ልዩነቱ ምንድነው?">What makes Zenith special?</h3>
+                    <p class="bilingual" data-en="It’s a full digital takeover with a custom website, bot, and high-end content to put your business on autopilot." data-am="የንግድዎ ሙሉ 'Takeover' ሲሆን ዌብሳይት፣ ቦት እና የቪዲዮ ይዘቶችን በማካተት ንግድዎ በራሱ እንዲመራ ያደርጋል።"></p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="bilingual" data-en="How does a Telegram bot help?" data-am="የቴሌግራም ቦት ጥቅሙ ምንድነው?">How does a Telegram bot help?</h3>
+                    <p class="bilingual" data-en="It automates interactions and orders, ensuring your business never sleeps." data-am="ደንበኞችን በራስ-ሰር ያስተናግዳል፣ ትዕዛዝ ይቀበላል፤ ንግድዎ 24/7 ስራ እንዲቀጥል ያደርጋል።"></p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="bilingual" data-en="How does payment work?" data-am="ክፍያ እንዴት ነው?">How does payment work?</h3>
+                    <p class="bilingual" data-en="Pricing varies by tier; we require an upfront commitment with milestones for the balance." data-am="እንደ ጥቅሎቹ ይለያያል፤ ስራ ስንጀምር ቅድመ ክፍያ እንቀበላለን፣ ቀሪውን በሂደት እንጨርሳለን።"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact-modal" class="modal-overlay hidden contact-overlay">
+        <div class="modal-content glass contact-content">
+            <button id="close-contact" class="close-btn">&times;</button>
+            <h2 class="bilingual" data-en="Contact Us" data-am="ያግኙን">Contact Us</h2>
+            <div class="social-icons-modal">
+                <a href="#" data-url="https://www.tiktok.com/@apexdigital.et" data-name="TikTok" class="icon glass-btn social-trigger">TikTok</a>
+                <a href="#" data-url="https://www.instagram.com/apexdigital.et" data-name="Instagram" class="icon glass-btn social-trigger">Insta</a>
+                <a href="#" data-url="https://www.facebook.com/share/1BMRntd8DQ/" data-name="Facebook" class="icon glass-btn social-trigger">Facebook</a>
+                <a href="#" data-url="https://t.me/ApexDigitalET" data-name="Telegram" class="icon glass-btn social-trigger">Telegram</a>
+                <a href="#" data-url="mailto:apexsolutions.et@gmail.com" data-name="Email" class="icon glass-btn social-trigger">Email</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="social-choice-modal" class="modal-overlay hidden">
+        <div class="modal-content glass no-blur text-center">
+            <button id="close-social-choice" class="close-btn">&times;</button>
+            <h2 id="social-choice-title">Open Link</h2>
+            <p class="bilingual" data-en="How would you like to view our page?" data-am="ገጻችንን እንዴት ማየት ይፈልጋሉ?">How would you like to view our page?</p>
+            <div style="display: flex; gap: 15px; justify-content: center; margin-top: 20px;">
+                <button id="social-in-app" class="glass-btn primary-btn bilingual" data-en="View in Website" data-am="እዚሁ ዌብሳይት ላይ">View in Website</button>
+                <button id="social-external" class="glass-btn bilingual" data-en="Open Externally" data-am="ከዌብሳይት ውጪ">Open Externally</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="social-iframe-modal" class="modal-overlay hidden">
+        <div class="modal-content glass no-blur" style="width: 100%; height: 85vh; padding: 20px; display: flex; flex-direction: column;">
+            <button id="close-social-iframe" class="close-btn" style="position: relative; align-self: flex-end; margin-bottom: 10px;">&times;</button>
+            <iframe id="social-iframe" src="" style="flex: 1; border: none; border-radius: 12px; background: white;"></iframe>
+        </div>
+    </div>
+
+    <div id="auth-modal" class="modal-overlay hidden">
+        <div class="modal-content glass no-blur auth-content">
+            <button id="close-auth" class="close-btn">&times;</button>
+            
+            <div id="auth-step-0" class="auth-step active">
+                <h2 class="bilingual" data-en="Welcome to APEX" data-am="ወደ APEX እንኳን በደህና መጡ">Welcome to APEX</h2>
+                <div class="auth-options">
+                    <button class="glass-btn primary-btn full-width bilingual" id="choose-login-btn" data-en="Login" data-am="ግባ">Login</button>
+                    <button class="glass-btn full-width bilingual" id="choose-register-btn" data-en="Register" data-am="ተመዝገብ">Register</button>
+                </div>
+            </div>
+
+            <div id="auth-step-login" class="auth-step hidden">
+                <h2 class="bilingual" data-en="Login" data-am="ግባ">Login</h2>
+                <form id="login-form" class="auth-form">
+                    <input type="email" id="login-email" placeholder="Email Address" required class="glass-input">
+                    <input type="password" id="login-password" placeholder="Password (4 Digits)" required class="glass-input" pattern="\d{4}">
+                    <button type="submit" class="glass-btn primary-btn full-width bilingual" data-en="Login" data-am="ግባ">Login</button>
+                    <p class="text-center" style="margin-top: 10px; cursor: pointer;" id="back-to-auth-1" class="bilingual" data-en="Back" data-am="ተመለስ">Back</p>
+                </form>
+            </div>
+
+            <div id="auth-step-register" class="auth-step hidden">
+                <h2 class="bilingual" data-en="Register" data-am="ተመዝገብ">Register</h2>
+                <form id="register-email-form" class="auth-form">
+                    <input type="email" id="register-email" placeholder="Email Address" required class="glass-input">
+                    <button type="submit" class="glass-btn primary-btn full-width bilingual" data-en="Continue" data-am="ይቀጥሉ">Continue</button>
+                    <p class="text-center" style="margin-top: 10px; cursor: pointer;" id="back-to-auth-2" class="bilingual" data-en="Back" data-am="ተመለስ">Back</p>
+                </form>
+            </div>
+
+            <div id="auth-step-2" class="auth-step hidden text-center">
+                <h2 class="bilingual" data-en="Verify Email" data-am="ኢሜልዎን ያረጋግጡ">Verify Email</h2>
+                <p class="bilingual" data-en="A verification code has been sent to your email." data-am="የማረጋገጫ ኮድ ወደ ኢሜልዎ ተልኳል።" style="margin-bottom: 10px; opacity: 0.9;">A verification code has been sent to your email.</p>
+                
+                <input type="text" id="verify-code-input" placeholder="Enter 6-digit Code" maxlength="6" class="glass-input text-center" style="letter-spacing: 5px; font-weight: bold; font-size: 1.2rem;">
+                <p id="verify-error" class="hidden" style="color: #ff4b4b; font-size: 0.85rem; margin-top: -5px;" class="bilingual" data-en="Invalid code. Please enter 6 digits." data-am="የተሳሳተ ኮድ ነው። እባክዎ 6 አሃዝ ያስገቡ።">Invalid code. Please enter 6 digits.</p>
+                
+                <button id="verify-btn" class="glass-btn primary-btn full-width bilingual" data-en="Verify" data-am="አረጋግጥ">Verify</button>
+            </div>
+
+            <div id="auth-step-3" class="auth-step hidden">
+                <h2 class="bilingual" data-en="Complete Profile" data-am="ፕሮፋይልዎን ይሙሉ">Complete Profile</h2>
+                <form id="complete-profile-form" class="auth-form">
+                    
+                    <div class="avatar-upload-container text-center">
+                        <label id="avatar-trigger-btn" class="bilingual glass-btn small-btn" data-en="Upload Custom Picture (Optional)" data-am="የግል ፎቶ ይጫኑ (አማራጭ)" style="cursor: pointer; display: inline-block;">Upload Custom Picture (Optional)</label>
+                        <input type="file" accept="image/*" id="custom-avatar-upload" hidden>
+                        
+                        <div id="avatar-preview-container" class="hidden" style="margin-top: 15px;">
+                            <div style="width: 100px; height: 100px; border-radius: 50%; overflow: hidden; margin: 0 auto; border: 2px solid var(--accent); position: relative;">
+                                <img id="avatar-preview-img" src="" style="width: 100%; height: 100%; object-fit: cover; transform: scale(1);">
+                            </div>
+                            <label style="display: block; margin-top: 10px; font-size: 0.9rem;" class="bilingual" data-en="Zoom" data-am="አስጠጋ/አርቅ">Zoom</label>
+                            <input type="range" id="avatar-zoom-slider" min="1" max="3" step="0.1" value="1" style="width: 80%;">
+                        </div>
+                    </div>
+
+                    <input type="text" id="prof-fullname" placeholder="Full Name (ሙሉ ስም)" required class="glass-input">
+                    <input type="text" id="prof-business" placeholder="Business/Brand Name (የድርጅት ስም) - Optional" class="glass-input">
+                    <input type="tel" id="prof-phone" placeholder="Phone Number (ስልክ ቁጥር)" required class="glass-input">
+                    
+                    <div class="custom-select-wrapper glass-input" id="location-select-wrapper" style="z-index: 20;">
+                        <input type="hidden" id="prof-location" required>
+                        <div class="custom-select-trigger bilingual" data-en="Select Location" data-am="ቦታ ይምረጡ">Select Location</div>
+                        <div class="custom-options glass no-blur">
+                            <div class="custom-option" data-value="Addis Ababa">Addis Ababa (City Administration)</div>
+                            <div class="custom-option" data-value="Afar">Afar</div>
+                            <div class="custom-option" data-value="Amhara">Amhara</div>
+                            <div class="custom-option" data-value="Benishangul-Gumuz">Benishangul-Gumuz</div>
+                            <div class="custom-option" data-value="Central Ethiopia">Central Ethiopia</div>
+                            <div class="custom-option" data-value="Dire Dawa">Dire Dawa (City Administration)</div>
+                            <div class="custom-option" data-value="Gambella">Gambella</div>
+                            <div class="custom-option" data-value="Harari">Harari</div>
+                            <div class="custom-option" data-value="Oromia">Oromia</div>
+                            <div class="custom-option" data-value="Sidama">Sidama</div>
+                            <div class="custom-option" data-value="Somali">Somali</div>
+                            <div class="custom-option" data-value="South Ethiopia">South Ethiopia</div>
+                            <div class="custom-option" data-value="South West Ethiopia Peoples'">South West Ethiopia Peoples'</div>
+                            <div class="custom-option" data-value="Tigray">Tigray</div>
+                        </div>
+                    </div>
+
+                    <div class="custom-select-wrapper glass-input" id="niche-select-wrapper" style="z-index: 10;">
+                        <input type="hidden" id="prof-niche" required>
+                        <div class="custom-select-trigger bilingual" data-en="Select Niche" data-am="የስራ ዘርፍ ይምረጡ">Select Niche</div>
+                        <div class="custom-options glass no-blur">
+                            <div class="custom-option" data-value="Personal Brand">Personal Brand (የግል ገጽ)</div>
+                            <div class="custom-option" data-value="Online Store/Shop">Online Store/Shop (የሽያጭ ገጽ)</div>
+                            <div class="custom-option" data-value="Business/Company">Business/Company (የድርጅት ገጽ)</div>
+                            <div class="custom-option" data-value="Real Estate/Property">Real Estate/Property (የቤት ሽያጭ)</div>
+                            <div class="custom-option" data-value="Educational/Course">Educational/Course (የትምህርት ገጽ)</div>
+                            <div class="custom-option" data-value="NGO/Organization">NGO/Organization (የድርጅት/የማህበር ገጽ)</div>
+                        </div>
+                    </div>
+
+                    <input type="password" id="prof-password" placeholder="Password (4 Digits Only)" required class="glass-input" maxlength="4" pattern="\d{4}">
+                    <input type="password" id="prof-password-confirm" placeholder="Re-enter Password" required class="glass-input" maxlength="4" pattern="\d{4}">
+
+                    <div style="display: flex; flex-direction: column; text-align: left; margin-top: 10px; font-size: 0.85rem;">
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <input type="checkbox" id="terms-checkbox" style="width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer;">
+                            <label for="terms-checkbox" style="cursor: pointer;">
+                                <span class="bilingual" data-en="I agree to the" data-am="በዚህ እስማማለሁ፦">I agree to the</span> 
+                                <span id="open-terms-link" style="color: var(--accent); text-decoration: underline; font-weight: bold; cursor: pointer;">Terms and Conditions</span>
+                            </label>
+                        </div>
+                        
+                        <div id="inline-terms-content" class="hidden" style="margin-top: 10px; background: rgba(0,0,0,0.2); padding: 15px; border-radius: 8px; border: 1px solid var(--glass-border); max-height: 150px; overflow-y: auto;">
+                            <ol style="padding-left: 20px; display: flex; flex-direction: column; gap: 12px; opacity: 0.9;">
+                                <li><b>የመረጃ ትክክለኛነት፦</b> "በምዝገባ ወቅት የምሰጠው ማንኛውም መረጃ (ስም፣ ስልክ፣ የቢዝነስ አይነት) ትክክለኛ መሆኑን አረጋግጣለሁ።"</li>
+                                <li><b>የመጀመሪያ ደረጃ መለያ (ID)፦</b> "ምዝገባውን ስላጠናቀቁ ሲስተሙ በራሱ ልዩ መለያ ቁጥር (Unique ID) ይሰጥዎታል። ይህ ID ለክፍያ እና ለቀጣይ ግንኙነቶች ያገለግላል።"</li>
+                                <li><b>የመረጃ ሚስጥራዊነት፦</b> "APEX Digital Solution የእርስዎን የግል እና የቢዝነስ መረጃ ለሶስተኛ ወገን አሳልፎ አይሰጥም፤ ለመረጃ ደህንነትዎም ዋስትና ይሰጣል።"</li>
+                                <li><b>ቀጣይ ሂደት (Next Steps)፦</b> "ምዝገባውን ሲያጠናቅቁ ወደ ክፍያ ገጽ የሚወሰዱ ሲሆን፣ ክፍያው ሲፈጸም ብቻ ስራው በይፋ እንደሚጀመር ተረድቻለሁ።"</li>
+                                <li><b>የግንኙነት ፍቃድ፦</b> "ኤጀንሲው ስለ ፕሮጀክቱ መረጃ ለመለዋወጥ በሰጠሁት ስልክ ቁጥር ወይም ኢሜይል እንዲያገኘኝ ፈቅጃለሁ።"</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <button type="submit" id="finish-reg-btn" class="glass-btn primary-btn full-width bilingual" data-en="Register" data-am="ተመዝገብ" disabled style="opacity: 0.5; cursor: not-allowed;">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="reg-success-modal" class="modal-overlay hidden">
+        <div class="modal-content glass no-blur text-center">
+            <button id="close-reg-success" class="close-btn">&times;</button>
+            <h2 class="bilingual" data-en="Registration Successful!" data-am="ምዝገባዎ ተሳክቷል!">Registration Successful!</h2>
+            <div style="margin: 20px 0; padding: 20px; background: rgba(25, 135, 84, 0.2); border: 1px solid var(--accent); border-radius: 12px;">
+                <p class="bilingual" data-en="Your unique APEX ID is:" data-am="የእርስዎ መለያ ቁጥር ይህ ነው፦" style="margin-bottom: 10px;">Your unique APEX ID is:</p>
+                <h1 id="generated-user-id" style="color: var(--accent); letter-spacing: 2px;">APEX-1000</h1>
+            </div>
+            <p class="bilingual" data-en="When you make a payment, your work will start immediately using this ID." data-am="ክፍያዎን ሲፈጽሙ ስራዎ ወዲያውኑ በዚህ መለያ ይጀመራል።">When you make a payment, your work will start immediately using this ID.</p>
+            <button id="continue-from-reg" class="glass-btn primary-btn full-width" style="margin-top: 15px;">Continue</button>
+        </div>
+    </div>
+
+    <div id="contract-success-modal" class="modal-overlay hidden">
+        <div class="modal-content glass no-blur" style="max-height: 90vh; display: flex; flex-direction: column;">
+            <button id="close-contract-success" class="close-btn">&times;</button>
+            <h2 class="bilingual text-center" data-en="Congratulations! Your contract is ready." data-am="እንኳን ደስ አለዎት! ኮንትራትዎ ተዘጋጅቷል።">Congratulations! Your contract is ready.</h2>
+            
+            <div id="printable-contract" style="background: white; color: black; padding: 30px; border-radius: 8px; margin-top: 15px; overflow-y: auto; flex: 1; font-family: 'Poppins', sans-serif; text-align: left; line-height: 1.6;">
+                <h3 style="text-align: center; color: #0a2910; border-bottom: 2px solid #0a2910; padding-bottom: 10px; margin-bottom: 20px;">የ APEX Digital Solution ሙሉ የውል ስምምነት (Template)</h3>
+                <p style="text-align: center; font-style: italic; margin-bottom: 30px;">ይህ ፎርማት ለጥቅልም ሆነ ለንጥል ስራዎች ይሆናል።</p>
+                
+                <h4 style="color: #198754; margin-bottom: 10px;">የአገልግሎት ስምምነት ውል (Service Agreement)</h4>
+                
+                <p><strong>የተዋዋይ ወገኖች መረጃ</strong><br>
+                ኤጀንሲ፦ APEX Digital Solution (Ethiopia)<br>
+                ደንበኛ፦ <span id="contract-client-name" style="text-decoration: underline;">__________________</span> (ከዚህ በኋላ "ደንበኛ" እየተባለ የሚጠራ)<br>
+                የደንበኛ መለያ (ID)፦ <span id="contract-client-id" style="font-weight: bold; color: #198754;">APEX-####</span><br>
+                የውል ቀን፦ <span id="contract-date">__________________</span> ዓ.ም</p>
+
+                <p style="margin-top: 20px;"><strong>የአገልግሎት ዝርዝር እና የጊዜ ገደብ</strong><br>
+                የተመረጠው አገልግሎት/ጥቅል፦ <span id="contract-package" style="font-weight: bold;">__________________</span><br>
+                የስራው መጀመሪያ ቀን፦ <span id="contract-start-date">__________________</span> ዓ.ም<br>
+                የስራው ማጠናቀቂያ ቀን፦ <span id="contract-end-date">__________________</span> ዓ.ም (ጠቅላላ የ<span id="contract-duration">___</span> ቀናት ስራ)</p>
+
+                <p style="margin-top: 20px;"><strong>የክፍያ ሁኔታ</strong><br>
+                ደንበኛው ለተጠቀሰው አገልግሎት ጠቅላላ <strong><span id="contract-price">_______</span> ETB</strong> በ Chapa በኩል የከፈለ ሲሆን፣ ይህ ክፍያ ተመላሽ (Non-refundable) አይደረግም።</p>
+
+                <p style="margin-top: 20px;"><strong>ግዴታዎች እና መብቶች</strong><br>
+                &bull; <strong>የኤጀንሲው ግዴታ፦</strong> ስራውን በታቀደው የጊዜ ገደብ በጥራት ማጠናቀቅ።<br>
+                &bull; <strong>የደንበኛው ግዴታ፦</strong> ለስራው የሚያስፈልጉ ግብዓቶችን (Text, Logo, Photos) በ 2 ቀናት ውስጥ ማቅረብ።<br>
+                &bull; <strong>ማሻሻያ (Revision)፦</strong> ስራው ከተረከበ በኋላ ለ 3 ተከታታይ ቀናት ነፃ ማሻሻያ የመጠየቅ መብት።<br>
+                &bull; <strong>ባለቤትነት፦</strong> ክፍያው እንደተጠናቀቀ የዲዛይኑ/የኮዱ ባለቤትነት ለደንበኛው ይተላለፋል።</p>
+                
+                <div style="margin-top: 40px; display: flex; justify-content: space-between;">
+                    <div>
+                        <p>የኤጀንሲው ፊርማ</p>
+                        <p>___________________</p>
+                    </div>
+                    <div>
+                        <p>የደንበኛው ፊርማ</p>
+                        <p>___________________</p>
+                    </div>
+                </div>
+            </div>
+
+            <button id="download-pdf-btn" class="glass-btn primary-btn full-width bilingual" data-en="Download PDF" data-am="ውልዎን ያውርዱ (PDF)" style="margin-top: 15px;">Download PDF</button>
+        </div>
+    </div>
+
+    <div id="support-modal" class="modal-overlay hidden">
+        <div class="modal-content glass no-blur" style="max-height: 85vh; width: 95%; max-width: 700px; display: flex; flex-direction: column;">
+            <button id="close-support" class="close-btn">&times;</button>
+            <h2 class="bilingual" data-en="Support Chat" data-am="የድጋፍ ማዕከል">Support Chat</h2>
+            <div id="chat-window" style="height: 350px; flex: none; overflow-y: auto; background: rgba(0,0,0,0.1); border-radius: 12px; padding: 15px; display: flex; flex-direction: column; gap: 10px; margin-bottom: 15px; border: 1px solid var(--glass-border);">
+            </div>
+            <div id="chat-options-container" class="chat-options" style="display: flex; flex-direction: column; gap: 10px; overflow-y: auto; max-height: 250px; padding-right: 10px;">
+                <h4 style="font-size:0.95rem; margin-top:5px; color:var(--accent);" class="bilingual" data-en="1. Service & Packages" data-am="1. ስለ አገልግሎት እና ጥቅል">1. ስለ አገልግሎት እና ጥቅል</h4>
+                <button class="glass-btn small-btn send-preset-btn bilingual" data-en="I haven't picked a package." data-am="ጥቅል አልመረጥኩም" data-val="I haven't picked a package">I haven't picked a package.</button>
+                <button class="glass-btn small-btn send-preset-btn bilingual" data-en="Custom Request" data-am="ልዩ ስራ እፈልጋለሁ" data-val="Custom Request">Custom Request</button>
+                <button class="glass-btn small-btn send-preset-btn bilingual" data-en="Price Inquiry" data-am="የዋጋ ዝርዝር" data-val="Price Inquiry">Price Inquiry</button>
+
+                <h4 style="font-size:0.95rem; margin-top:10px; color:var(--accent);" class="bilingual" data-en="2. Payment & Registration" data-am="2. ስለ ክፍያ እና ምዝገባ">2. ስለ ክፍያ እና ምዝገባ</h4>
+                <button class="glass-btn small-btn send-preset-btn bilingual" data-en="Payment issue" data-am="ክፍያ አልሰራልኝ አለ" data-val="Payment issue">Payment issue</button>
+                <button class="glass-btn small-btn send-preset-btn bilingual" data-en="Change information" data-am="መረጃ መቀየር እፈልጋለሁ" data-val="Change information">Change information</button>
+                <button class="glass-btn small-btn send-preset-btn bilingual" data-en="ID not received" data-am="የመለያ ቁጥር (ID) አልመጣልኝም" data-val="ID not received">ID not received</button>
+
+                <h4 style="font-size:0.95rem; margin-top:10px; color:var(--accent);" class="bilingual" data-en="3. For Active Clients" data-am="3. ለነባር ደንበኞች">3. ለነባር ደንበኞች</h4>
+                <button class="glass-btn small-btn send-preset-btn bilingual" data-en="Project Status" data-am="የስራዬ ደረጃ" data-val="Project Status">Project Status</button>
+                <button class="glass-btn small-btn send-preset-btn bilingual" data-en="Request Revision" data-am="ማሻሻያ መጠየቅ" data-val="Request Revision">Request Revision</button>
+                <button class="glass-btn small-btn send-preset-btn bilingual" data-en="Send Assets" data-am="ፋይል መላክ" data-val="Send Assets">Send Assets</button>
+            </div>
+            <button id="reset-chat-btn" class="glass-btn small-btn full-width" style="margin-top: 10px; border-color: #dc3545; color: #dc3545;">Reset Chat</button>
+        </div>
+    </div>
+
+    <div id="history-modal" class="modal-overlay hidden">
+        <div class="modal-content glass no-blur">
+            <button id="close-history" class="close-btn">&times;</button>
+            <h2 class="bilingual" data-en="Payment History" data-am="የክፍያ ታሪክ">Payment History</h2>
+            <div id="history-list" style="display: flex; flex-direction: column; gap: 10px; margin-top: 20px;"></div>
+        </div>
+    </div>
+
+    <div id="settings-modal" class="modal-overlay hidden">
+        <div class="modal-content glass no-blur">
+            <button id="close-settings" class="close-btn">&times;</button>
+            <h2 class="bilingual" data-en="Settings" data-am="ማስተካከያዎች">Settings</h2>
+            <form id="settings-form" class="auth-form" style="margin-top: 15px;">
+                <label class="bilingual" data-en="Update Phone Number" data-am="ስልክ ቁጥር ይቀይሩ">Update Phone Number</label>
+                <input type="tel" id="set-phone" placeholder="Phone Number" required class="glass-input">
+
+                <label class="bilingual" data-en="Update Business Name" data-am="የድርጅት ስም ይቀይሩ">Update Business Name</label>
+                <input type="text" id="set-business" placeholder="Business Name" class="glass-input">
+                
+                <label class="bilingual" data-en="Change Password (4 Digits)" data-am="የይለፍ ቃል ይቀይሩ (4 ቁጥሮች)" style="margin-top: 10px;">Change Password (4 Digits)</label>
+                <input type="password" id="set-old-password" placeholder="Old Password" class="glass-input" maxlength="4" pattern="\d{4}">
+                <input type="password" id="set-new-password" placeholder="New Password" class="glass-input" maxlength="4" pattern="\d{4}">
+                
+                <button type="submit" class="glass-btn primary-btn full-width bilingual" data-en="Save Changes" data-am="ለውጦችን አስቀምጥ">Save Changes</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="contracts-modal" class="modal-overlay hidden">
+        <div class="modal-content glass no-blur">
+            <button id="close-contracts" class="close-btn">&times;</button>
+            <h2 class="bilingual" data-en="Your Contract" data-am="የእርስዎ ውል">Your Contract</h2>
+            <div id="contract-content" style="margin-top: 20px; padding: 15px; background: rgba(0,0,0,0.1); border-radius: 12px; line-height: 1.6; max-height: 50vh; overflow-y: auto;">
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <div class="logo-group">
+            <img src="https://image2url.com/r2/default/images/1774855725296-f5bbbe32-49ca-472b-b9cf-ac2b456768e3.png" alt="Apex Logo" class="main-logo">
+            <span class="logo-text">APEX</span>
+        </div>
+        
+        <div class="nav-controls">
+            <button id="faq-nav-btn" class="glass-btn small-btn bilingual" data-en="FAQ" data-am="ጥያቄዎች">FAQ</button>
+            <button id="about-nav-btn" class="glass-btn small-btn bilingual" data-en="About" data-am="ስለ እኛ">About</button>
+            <div id="theme-toggle" class="theme-switch"></div>
+            <button id="lang-toggle" class="icon-btn lang-btn">አማ / EN</button>
+            <button id="profile-trigger-btn" class="icon-btn profile-btn" style="padding: 0!important;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </button>
+        </div>
+    </nav>
+
+    <section id="page-home" class="page active">
+        <h2 class="apex-top-title bilingual pop-up" data-en="Apex Digital Solution" data-am="ኤፔክስ ዲጂታል ሶሉሽን">Apex Digital Solution</h2>
+
+        <div class="glass-hero pop-up" style="animation-delay: 0.1s;">
+            <h1 class="bilingual" data-en="BUILD YOUR DIGITAL EMPIRE" data-am="የዲጂታል ግዛትዎን ይገንቡ">BUILD YOUR DIGITAL EMPIRE</h1>
+            <p class="hero-subtitle bilingual pop-up" style="animation-delay: 0.15s;" data-en="Empowering your brand through world-class social media management and high-converting digital strategies." data-am="ብራንድዎን በዓለም አቀፍ ደረጃ የሶሻል ሚዲያ አስተዳደር እና ከፍተኛ ልወጣ በሚያመጡ ዲጂታል ስትራቴጂዎች ማብቃት።">Empowering your brand through world-class social media management and high-converting digital strategies.</p>
+        </div>
+        
+        <div class="typing-container pop-up" style="animation-delay: 0.2s;" data-en="Estimated 2026." data-am="ግምት 2026.">
+            <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+        </div>
+
+        <button class="glass-btn primary-btn bilingual pop-up explore-moved" id="explore-btn" style="animation-delay: 0.3s;" data-en="Explore Packages" data-am="ጥቅሎችን ይመልከቱ">Explore Packages</button>
+    </section>
+
+    <section id="page-packages" class="page hidden">
+        <button class="back-btn glass-btn bilingual" onclick="goToHome()" data-en="← Back to Home" data-am="← ወደ ኋላ ይመለሱ">← Back to Home</button>
+        <h2 class="packages-title bilingual pop-up" data-en="Choose Your Package" data-am="ጥቅልዎን ይምረጡ">Choose Your Package</h2>
+
+        <div class="cards-grid">
+            <div class="glass-card pop-up sequential" style="--card-order: 0;" onclick="showDetails(1)">
+                <div class="card-badge">1</div>
+                <h2 class="bilingual" data-en="Package 1: Ascent (The Foundation)" data-am="ጥቅል 1: Ascent (መሰረቱ)">Package 1: Ascent (The Foundation)</h2>
+                <p class="card-desc bilingual pop-up" style="animation-delay: 0.2s;" data-en="Ideal for new businesses looking to establish a professional digital presence." data-am="ፕሮፌሽናል ዲጂታል ገጽታ ለመገንባት ለሚፈልጉ አዳዲስ ንግዶች ተስማሚ።">Ideal for new businesses looking to establish a professional digital presence.</p>
+                <button class="glass-btn small-btn details-btn bilingual" data-en="See Details" data-am="ዝርዝሩን ይዩ">See Details</button>
+            </div>
+            
+            <div class="glass-card pop-up sequential" style="--card-order: 1;" onclick="showDetails(2)">
+                <div class="ribbon-wrapper"><div class="ribbon">Recommended</div></div>
+                <div class="card-badge">2</div>
+                <h2 class="bilingual" data-en="Package 2: Apex (The Growth Accelerator)" data-am="ጥቅል 2: Apex (የዕድገት ማጣደፊያ)">Package 2: Apex (The Growth Accelerator)</h2>
+                <p class="card-desc bilingual pop-up" style="animation-delay: 0.3s;" data-en="Designed for businesses ready to scale and generate consistent leads." data-am="ለማደግ እና ተከታታይ ደንበኞችን ለማፍራት ለተዘጋጁ ንግዶች የተነደፈ።">Designed for businesses ready to scale and generate consistent leads.</p>
+                <button class="glass-btn small-btn details-btn bilingual" data-en="See Details" data-am="ዝርዝሩን ይዩ">See Details</button>
+            </div>
+            
+            <div class="glass-card pop-up sequential" style="--card-order: 2;" onclick="showDetails(3)">
+                <div class="card-badge">3</div>
+                <h2 class="bilingual" data-en="Package 3: Zenith (The Empire Builder)" data-am="ጥቅል 3: Zenith (የግዛት ገንቢው)">Package 3: Zenith (The Empire Builder)</h2>
+                <p class="card-desc bilingual pop-up" style="animation-delay: 0.4s;" data-en="The ultimate all-in-one digital takeover for established brands." data-am="ለታወቁ ብራንዶች የተሟላ ሁሉንም-በአንድ የያዘ ዲጂታል የበላይነት።">The ultimate all-in-one digital takeover for established brands.</p>
+                <button class="glass-btn small-btn details-btn bilingual" data-en="See Details" data-am="ዝርዝሩን ይዩ">See Details</button>
+            </div>
+            
+            <div class="glass-card pop-up sequential" style="--card-order: 3;" onclick="showDetails(4)">
+                <div class="card-badge">4</div>
+                <h2 class="bilingual" data-en="Individual Services (Add-ons)" data-am="ተጨማሪ የግል አገልግሎቶች">Individual Services (Add-ons)</h2>
+                <p class="card-desc bilingual pop-up" style="animation-delay: 0.5s;" data-en="Customized extra services to enhance your brand's digital footprint." data-am="የብራንድዎን ዲጂታል አሻራ ለማሳደግ የተዘጋጁ ተጨማሪ አገልግሎቶች።">Customized extra services to enhance your brand's digital footprint.</p>
+                <button class="glass-btn small-btn details-btn bilingual" data-en="See Details" data-am="ዝርዝሩን ይዩ">See Details</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="page-details" class="page hidden">
+        <button class="back-btn glass-btn bilingual" onclick="goToPackages()" data-en="← Back to Packages" data-am="← ወደ ጥቅሎች ይመለሱ">← Back to Packages</button>
+        <div class="glass-detail-card pop-up" id="details-container"></div>
+    </section>
+
+    <section id="page-profile" class="page hidden">
+        <button class="back-btn glass-btn bilingual" onclick="goToHome()" data-en="← Back to Home" data-am="← ወደ ኋላ ይመለሱ">← Back to Home</button>
+        
+        <div class="profile-container pop-up">
+            <div class="profile-header glass no-blur">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" id="profile-page-avatar" alt="User Avatar" class="profile-avatar-large">
+                <div class="profile-info">
+                    <h2 id="display-fullname">Guest User</h2>
+                    <p class="location-badge">📍 <span id="display-location">Location</span> | <span id="display-phone">Phone</span> | <b><span id="display-id" style="color:var(--accent);"></span></b></p>
+                </div>
+                <button id="logout-btn" class="glass-btn small-btn logout-btn bilingual" data-en="Logout" data-am="ውጣ">Logout</button>
+            </div>
+
+            <div class="status-card glass">
+                <h3 class="bilingual" data-en="Current Package Status" data-am="የአሁኑ የጥቅል ሁኔታ">Current Package Status</h3>
+                <div class="status-indicator">
+                    <span class="dot red" id="status-dot"></span>
+                    <span id="package-status-text" class="bilingual" data-en="No Active Packages" data-am="ምንም ንቁ ጥቅል የለም">No Active Packages</span>
+                </div>
+            </div>
+
+            <div class="action-grid">
+                <div class="glass-card action-card" id="btn-open-support">
+                    <div class="action-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 40px; height: 40px;"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg></div>
+                    <h4 class="bilingual" data-en="Support" data-am="እርዳታ">Support</h4>
+                    <p class="bilingual" data-en="Contact APEX team" data-am="የ APEX ቡድንን ያግኙ">Contact APEX team</p>
+                </div>
+                <div class="glass-card action-card" id="btn-open-history">
+                    <div class="action-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 40px; height: 40px;"><rect x="2" y="5" width="20" height="14" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg></div>
+                    <h4 class="bilingual" data-en="Payment History" data-am="የክፍያ ታሪክ">Payment History</h4>
+                    <p class="bilingual" data-en="View your receipts" data-am="ደረሰኞችዎን ይመልከቱ">View your receipts</p>
+                </div>
+                <div class="glass-card action-card" id="btn-open-settings">
+                    <div class="action-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 40px; height: 40px;"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg></div>
+                    <h4 class="bilingual" data-en="Settings" data-am="ማስተካከያዎች">Settings</h4>
+                    <p class="bilingual" data-en="Update your profile" data-am="ፕሮፋይልዎን ያስተካክሉ">Update your profile</p>
+                </div>
+                <div class="glass-card action-card" id="btn-open-contracts">
+                    <div class="action-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 40px; height: 40px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></div>
+                    <h4 class="bilingual" data-en="Contracts" data-am="ውሎች">Contracts</h4>
+                    <p class="bilingual" data-en="View active documents" data-am="ንቁ የሆኑ ሰነዶችን ይመልከቱ">View active documents</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="global-bottom-controls pop-up" style="animation-delay: 0.5s;">
+        <button id="contact-btn" class="glass-btn contact-btn bilingual" data-en="Contact Us" data-am="ያግኙን">Contact Us</button>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
+    <script type="module" src="./script.js"></script>
+
+  </body>
+  
+</html>
